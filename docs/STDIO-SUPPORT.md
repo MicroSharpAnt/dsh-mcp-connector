@@ -658,11 +658,11 @@ cwd: { type: 'string', description: 'transport=stdio 时的工作目录，默认
 
 ## 九、参考证据（已核实）
 
-- `@deepseek-ai/dsh-mcp-client@0.1.1-rc.2`
+- `@deepseek-ai/dsh-mcp-client@0.1.1-rc.2` 与 `@0.2.0-rc.1`（两者均已核实，命名与配置契约一致）
   - `lib/types/index.d.ts`：`StdioConfig` / `StreamableHttpConfig` / `Config = StdioConfig | StreamableHttpConfig`
   - `lib/index.js`：`createTransport()` 分支 `StdioClientTransport` / `StreamableHTTPClientTransport`
   - `lib/index.js`：Config schema `command` 必填、`args/env/cwd/toolCallTimeoutMs` 有默认值
-  - `lib/index.js` L14：`import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js"`
+  - `lib/index.js` L6：0.2.0-rc.1 的 MCP SDK 引入路径已从 0.1.1-rc.2 的 `@modelcontextprotocol/sdk/client/stdio.js` 变为 `@modelcontextprotocol/client/stdio`；本插件不直接依赖该 SDK，无适配影响
 - 三家大厂传输方式（官方文档）：
   - WorkBuddy：`mcp.json` 的 `command/args/env`（stdio）
   - TraeWork：`npx/uvx`（stdio）+ `url/headers`（HTTP）

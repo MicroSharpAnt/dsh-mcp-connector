@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### Changed
+
+- 放宽官方 MCP 客户端依赖声明为 `^0.1.1-rc.2 || ^0.2.0-rc.1`：DSH 0.2.0-rc.1 将 `@deepseek-ai/dsh-mcp-client` 从 `0.1.x` 提升到 `0.2.0-rc.1`，而原声明 `^0.1.1-rc.2` 因语义化版本对 prerelease 的匹配规则排除了 `0.2.0-rc.1`，会触发 peer 不匹配；`devDependencies` 中的 `@deepseek-ai/dsh-storage` 与 `@deepseek-ai/dsh-storage-domain` 同步放宽。
+- 核实 DSH `0.2.0-rc.1` 与 `0.1.1-rc.2` 的 MCP 条目 Config schema（`transport` / `serverName` / `command` / `args` / `env` / `cwd` / `url` / `headers` / `failOnStartupError`）与 `publicToolName` 命名算法逐字一致，且 `uiWorkspace.connectWorkspace` 与 `conversation.input.shell().setDraft()` 均可用，本插件运行时代码无需改动。
+
 ## [0.2.59] - 2026-09-25
 
 ### Fixed

@@ -170,7 +170,7 @@ Bundle 默认配置位于 `cordis.patch.yml`：
 | 项目 | 当前边界 |
 |---|---|
 | 宿主与运行时 | DSH Desktop / `web` profile，Node.js 20+ |
-| MCP 客户端 | 官方 `@deepseek-ai/dsh-mcp-client` `^0.1.1-rc.2` |
+| MCP 客户端 | 官方 `@deepseek-ai/dsh-mcp-client` `^0.1.1-rc.2 || ^0.2.0-rc.1` |
 | 传输 | Streamable HTTP、stdio；旧 `sse` 归一为 Streamable HTTP |
 | 配置作用域 | Workspace project / profile global；全局由项目继承，Host 强制隔离，支持预览、复制/移动和 revision 回滚 |
 | 配置交换 | JSON 导入、脱敏导出、最多 20 个本机快照、预览与原子恢复 |

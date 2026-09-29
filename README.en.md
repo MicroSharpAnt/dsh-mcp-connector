@@ -175,7 +175,7 @@ Set `catalogUrl` to an empty string for an explicitly offline/private setup. A c
 | Area | Current boundary |
 |---|---|
 | Host and runtime | DSH Desktop / `web` profile; Node.js 20+ |
-| MCP client | Official `@deepseek-ai/dsh-mcp-client` `^0.1.1-rc.2` |
+| MCP client | Official `@deepseek-ai/dsh-mcp-client` `^0.1.1-rc.2 || ^0.2.0-rc.1` |
 | Transports | Streamable HTTP and stdio; legacy `sse` normalizes to Streamable HTTP |
 | Configuration scope | Workspace project / profile global, with Host enforcement, impact preview, copy/move, and revision rollback |
 | Configuration exchange | JSON import, redacted export, up to 20 local snapshots, preview, and atomic restore |

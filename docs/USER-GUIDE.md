@@ -252,7 +252,7 @@ OAuth 断开时，插件会尽力调用服务商的撤销端点；无撤销端�
 | 能力 | 当前支持 | 说明 |
 |---|---|---|
 | DSH 宿主 | Desktop / `web` profile | Node.js 20+；连接保存于当前 profile |
-| 官方 MCP 客户端 | `@deepseek-ai/dsh-mcp-client` `^0.1.1-rc.2` | 负责连接生命周期、stdio 进程和工具注册 |
+| 官方 MCP 客户端 | `@deepseek-ai/dsh-mcp-client` `^0.1.1-rc.2 || ^0.2.0-rc.1` | 负责连接生命周期、stdio 进程和工具注册 |
 | 传输 | Streamable HTTP、stdio | 历史 `sse` 配置归一为 Streamable HTTP |
 | 鉴权 | 无鉴权、Bearer、API Key、OAuth 2.0 PKCE | OAuth 支持动态客户端注册和 Grant 共享 |
 | 配置交换 | JSON 导入、脱敏导出、本机快照 | 占位符需重填；恢复原子执行；OAuth 撤销后需重新授权 |
